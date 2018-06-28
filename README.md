@@ -2,4 +2,4 @@
 
 My demos for web development class that I am teaching nowadays.
 
--   First demo.
+-   First demo: A tip landing page.
