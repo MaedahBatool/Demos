@@ -14,52 +14,69 @@
 <body>
 	<div class="main">
 		<div class="top">
-			<h1>
-				<span>🙌</span> Start Using BrowserSync Today!</h1>
+			<div class="top_inner">
+				<h1>
+					<span>🙌</span> Start Using BrowserSync Today!</h1>
+				<p>
+					Browsersync is one of my favorite plugins for live browser reloads. Here's a quick setup guide for configuring BrowserSync
+					to speed your web development workflow.
+				</p>
+			</div>
 		</div>
 
 		<div class="steps">
 			<div class="step">
-				<h2>➡️ STEP 01</h2>
+				<h2>➡️ STEP 01: Install NodeJS & NPM</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere
-					turpis adipiscing. Quisque sit amet dui dui. Duis rhoncus velit nec est condimentum feugiat. Donec aliquam augue nec.
+					BrowserSync is an NPM package, and it needs Node.js to be installed. If you’ve already installed it earlier, just check through
+					the following commands or download and install it from
+					<a href="https://nodejs.org/en/download/">here</a>.
+
 				</p>
 				<div class="todo">
-					<p>Install Node.js</p>
+					<pre><code> node -v # v7.10.0 </code></pre>
+					<br>
+					<pre><code> npm -v # 4.2.0 </code></pre>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 01</h2>
+				<h2>➡️ STEP 02: Install BrowserSync</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere
-					turpis adipiscing. Quisque sit amet dui dui. Duis rhoncus velit nec est condimentum feugiat. Donec aliquam augue nec.
+					Next, you’ll install BrowserSync globally by typing the following commands in your terminal.
+
 				</p>
 				<div class="todo">
-					<p>Install Node.js</p>
+					<pre><code> npm n install -g browser-sync</code></pre>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 01</h2>
+				<h2>➡️ STEP 03: Start Running BrowserSync</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere
-					turpis adipiscing. Quisque sit amet dui dui. Duis rhoncus velit nec est condimentum feugiat. Donec aliquam augue nec.
+					BrowserSync creates a server for static websites and can be used as a proxy for dynamic sites. Therefore, it defines separate
+					commands for each of these.
 				</p>
 				<div class="todo">
-					<p>Install Node.js</p>
+					<p>
+						<b>Static Websites</b>:</p>
+					<pre><code> browser-sync start --server --files "css/*.css"</code></pre>
+					<br>
+					<p>
+						<b>Dynamic Websites</b>:</p>
+					<pre><code> browser-sync start --proxy "local.dev" --files "**/*" </code></pre>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 01</h2>
+				<h2>➡️ STEP 04: Tunneling</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere
-					turpis adipiscing. Quisque sit amet dui dui. Duis rhoncus velit nec est condimentum feugiat. Donec aliquam augue nec.
+					One of the best things which I like about BrowserSync is that you can share a local development site with your teammates
+					over the internet right from your own computer. This is its tunnel option comes into play. Each time you start BrowserSync,
+					just enter the following command:
 				</p>
 				<div class="todo">
-					<p>Install Node.js</p>
+					<pre><code> browser-sync start --proxy "local.dev" --files "**/*" --tunnel </code></pre>
 				</div>
 			</div>
 		</div>

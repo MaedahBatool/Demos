@@ -39,18 +39,32 @@ h3 {
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.top > h1 {
+.top_inner {
 	display: table-cell;
+	vertical-align: middle;
+}
+
+.top h1 {
+	display: table;
 	width: 100%;
 	vertical-align: middle;
 	font-size: 4rem;
 	color: white;
 }
 
-.top > h1 > span {
+.top h1 > span {
 	display: table;
 	width: 100%;
 	margin: 0 auto 0.5rem;
+}
+
+.top p {
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 1.6rem;
+	color: white;
+	line-height: 1.4;
 }
 
 .steps {
@@ -82,4 +96,10 @@ p {
 	margin: 3rem auto 0;
 	padding: 2rem;
 	max-width: 75rem;
+}
+
+code {
+	font-size: 1.5rem;
+	line-height: 1.45;
+	text-align: center;
 }
