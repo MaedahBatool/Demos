@@ -28,7 +28,8 @@
 
 		<div class="steps">
 			<div class="step">
-				<h2>➡️ STEP 01: Install NodeJS & NPM</h2>
+				<h2>
+					#1: Install NodeJS & NPM</h2>
 				<p>
 					BrowserSync is an NPM package, and it needs Node.js to be installed. If you’ve already installed it earlier, just check through
 					the following commands or download and install it from
@@ -36,49 +37,44 @@
 
 				</p>
 				<div class="todo">
-					<pre><code> node -v # v7.10.0 </code></pre>
-					<br>
-					<pre><code> npm -v # 4.2.0 </code></pre>
+					<script src="https://gist.github.com/MaedahBatool/913b0ef676873c1598ad3fd08e27567b.js?file=1.sh"></script>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 02: Install BrowserSync</h2>
+				<h2>
+					#2: Install BrowserSync</h2>
 				<p>
 					Next, you’ll install BrowserSync globally by typing the following commands in your terminal.
 
 				</p>
 				<div class="todo">
-					<pre><code> npm n install -g browser-sync</code></pre>
+					<script src="https://gist.github.com/MaedahBatool/913b0ef676873c1598ad3fd08e27567b.js?file=2.sh"></script>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 03: Start Running BrowserSync</h2>
+				<h2>
+					#3: Start Running BrowserSync</h2>
 				<p>
 					BrowserSync creates a server for static websites and can be used as a proxy for dynamic sites. Therefore, it defines separate
 					commands for each of these.
 				</p>
 				<div class="todo">
-					<p>
-						<b>Static Websites</b>:</p>
-					<pre><code> browser-sync start --server --files "css/*.css"</code></pre>
-					<br>
-					<p>
-						<b>Dynamic Websites</b>:</p>
-					<pre><code> browser-sync start --proxy "local.dev" --files "**/*" </code></pre>
+					<script src="https://gist.github.com/MaedahBatool/913b0ef676873c1598ad3fd08e27567b.js?file=3.sh"></script>
 				</div>
 			</div>
 
 			<div class="step">
-				<h2>➡️ STEP 04: Tunneling</h2>
+				<h2>
+					#4: Tunneling</h2>
 				<p>
 					One of the best things which I like about BrowserSync is that you can share a local development site with your teammates
 					over the internet right from your own computer. This is its tunnel option comes into play. Each time you start BrowserSync,
 					just enter the following command:
 				</p>
 				<div class="todo">
-					<pre><code> browser-sync start --proxy "local.dev" --files "**/*" --tunnel </code></pre>
+					<script src="https://gist.github.com/MaedahBatool/913b0ef676873c1598ad3fd08e27567b.js?file=4.sh"></script>
 				</div>
 			</div>
 		</div>
